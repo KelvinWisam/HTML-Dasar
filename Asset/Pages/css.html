@@ -1,62 +1,31 @@
-body {
-    margin: 1;
-    padding: 1;
-    font-family: Arial, sans-serif;
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Dasar</title>
+        <link rel="stylesheet" href="style.css"> 
+    </head>
 
-img {
-    position: static;
-    top: 10;
-    left: 100;
-    width: 20%;
-    height: 50%;
-    object-fit: cover;
-    filter: brightness(0.9); /* Untuk mengurangi kecerahan gambar latar belakang */
-}
-
-video {
-    position: relative;
-    top: 1;
-    left: 0;
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
-}
-
-.login-form {
-    background-color: rgba(235, 225, 225, 0.8);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(236, 243, 234, 0.2);
-    text-align: center;
-}
-
-h2 {
-    margin-bottom: 20px;
-}
-
-.input-group {
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-input {
-    width: 30%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    background-color: #ff6600;
-    color: rgb(7, 1, 1);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
+    <body>
+        <div class="box">
+            <div class=internal">
+                <h1 class="internal">Silahkan masukkan informasi akun Anda untuk mengakses dashboard</h1>
+                </div>
+                <img src="picture/images.png" alt="">
+    <video width="150" height="150" controls>
+        <source src="Vidio/vidio1.mp4" type="video/mp4">
+    </video>
+                <div class="border">
+                    <p>*Wajib di Isi.</p>
+                    </div>
+        <form method="post" nama="form-Daftar" novalidate>
+        <label>User Name*</label><br>
+        <input type="text" required placeholder="Masukkan Username"><br>
+        <label>Password*</label><br>
+        <input type="text" required placeholder="Masukkan Password"><br>
+        <label>Captcha*</label><br>
+        <input type="text" required placeholder="Masukkan Captcha"><br>
+        </form><br>
+        <button type="Login">Login</button>
+        </div>
+    </body>
+</html>
